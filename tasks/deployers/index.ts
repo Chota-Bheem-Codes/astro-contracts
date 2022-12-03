@@ -38,8 +38,8 @@ task("deploy:Factory").setAction(async function (taskArguments: TaskArguments, {
 task("deploy:Question").setAction(async function (taskArguments: TaskArguments, { ethers, upgrades, run }) {
   const adminAddress = "0xaC4ed32d9c7F2a7ed6FAa25f7C1Efba100502B91";
   const operatorAddress = "0xaC4ed32d9c7F2a7ed6FAa25f7C1Efba100502B91";
-  const gameToken = "0xff2e69aad5b6a4903347aadcd70e632af0015b8f";
-  const factoryAddress = "0xa6eE707Ee21759833FaaE0edf8EBeb18Cd9f6d12";
+  const gameToken = "0xfF2e69aAd5b6a4903347aADcd70E632AF0015B8F";
+  const factoryAddress = "0xaF1384C026c490f300209854e86078ed01724b96";
   const gameQuestionContract = await ethers.getContractFactory("GameQuestion");
   const factoryContract = await ethers.getContractFactory("Factory");
 

@@ -62,7 +62,7 @@ function getChainConfig(network: keyof typeof chainIds): NetworkUserConfig {
     url = "https://evm-t3.cronos.org";
   }
   if (network == "shardeum") {
-    url = "https://explorer-liberty10.shardeum.org";
+    url = "https://liberty10.shardeum.org/";
   }
   return {
     accounts: {
