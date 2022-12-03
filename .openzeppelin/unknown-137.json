@@ -1,0 +1,1841 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x583985Ff6695310D03f414772761C9b35F36A6A8",
+    "txHash": "0xfe97ae8a73c5bd09563d25816808f8895fde54b732e386c0d01a1eb85f748c38",
+    "deployTransaction": {
+      "hash": "0xfe97ae8a73c5bd09563d25816808f8895fde54b732e386c0d01a1eb85f748c38",
+      "type": 0,
+      "accessList": null,
+      "blockHash": null,
+      "blockNumber": null,
+      "transactionIndex": null,
+      "confirmations": 0,
+      "from": "0x8c929EA5BECAa4f2007B26578Fa33a3DC421F167",
+      "gasPrice": {
+        "type": "BigNumber",
+        "hex": "0x06fc23ac00"
+      },
+      "gasLimit": {
+        "type": "BigNumber",
+        "hex": "0x0762b4"
+      },
+      "to": null,
+      "value": {
+        "type": "BigNumber",
+        "hex": "0x00"
+      },
+      "nonce": 7,
+      "data": "0x608060405234801561001057600080fd5b50600080546001600160a01b031916339081178255604051909182917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908290a350610759806100616000396000f3fe60806040526004361061007b5760003560e01c80639623609d1161004e5780639623609d1461011157806399a88ec414610124578063f2fde38b14610144578063f3b7dead146101645761007b565b8063204e1c7a14610080578063715018a6146100bc5780637eff275e146100d35780638da5cb5b146100f3575b600080fd5b34801561008c57600080fd5b506100a061009b366004610515565b610184565b6040516001600160a01b03909116815260200160405180910390f35b3480156100c857600080fd5b506100d1610215565b005b3480156100df57600080fd5b506100d16100ee366004610554565b610292565b3480156100ff57600080fd5b506000546001600160a01b03166100a0565b6100d161011f36600461058c565b61031c565b34801561013057600080fd5b506100d161013f366004610554565b6103ad565b34801561015057600080fd5b506100d161015f366004610515565b610405565b34801561017057600080fd5b506100a061017f366004610515565b6104ef565b6000806000836001600160a01b03166040516101aa90635c60da1b60e01b815260040190565b600060405180830381855afa9150503d80600081146101e5576040519150601f19603f3d011682016040523d82523d6000602084013e6101ea565b606091505b5091509150816101f957600080fd5b8080602001905181019061020d9190610538565b949350505050565b6000546001600160a01b031633146102485760405162461bcd60e51b815260040161023f906106c0565b60405180910390fd5b600080546040516001600160a01b03909116907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0908390a3600080546001600160a01b0319169055565b6000546001600160a01b031633146102bc5760405162461bcd60e51b815260040161023f906106c0565b6040516308f2839760e41b81526001600160a01b038281166004830152831690638f283970906024015b600060405180830381600087803b15801561030057600080fd5b505af1158015610314573d6000803e3d6000fd5b505050505050565b6000546001600160a01b031633146103465760405162461bcd60e51b815260040161023f906106c0565b60405163278f794360e11b81526001600160a01b03841690634f1ef286903490610376908690869060040161065d565b6000604051808303818588803b15801561038f57600080fd5b505af11580156103a3573d6000803e3d6000fd5b5050505050505050565b6000546001600160a01b031633146103d75760405162461bcd60e51b815260040161023f906106c0565b604051631b2ce7f360e11b81526001600160a01b038281166004830152831690633659cfe6906024016102e6565b6000546001600160a01b0316331461042f5760405162461bcd60e51b815260040161023f906106c0565b6001600160a01b0381166104945760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b606482015260840161023f565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000806000836001600160a01b03166040516101aa906303e1469160e61b815260040190565b600060208284031215610526578081fd5b81356105318161070b565b9392505050565b600060208284031215610549578081fd5b81516105318161070b565b60008060408385031215610566578081fd5b82356105718161070b565b915060208301356105818161070b565b809150509250929050565b6000806000606084860312156105a0578081fd5b83356105ab8161070b565b925060208401356105bb8161070b565b9150604084013567ffffffffffffffff808211156105d7578283fd5b818601915086601f8301126105ea578283fd5b8135818111156105fc576105fc6106f5565b604051601f8201601f19908116603f01168101908382118183101715610624576106246106f5565b8160405282815289602084870101111561063c578586fd5b82602086016020830137856020848301015280955050505050509250925092565b600060018060a01b038416825260206040818401528351806040850152825b818110156106985785810183015185820160600152820161067c565b818111156106a95783606083870101525b50601f01601f191692909201606001949350505050565b6020808252818101527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604082015260600190565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b038116811461072057600080fd5b5056fea2646970667358221220d849f96f3086b9f82cdcf665adb8c697ace05638da1c7c16ab2d26293717af6764736f6c63430008020033",
+      "r": "0x60f89e17b0e8cae0d0f68057e0cf45ca88b976c5f91d9dfd78ab2c4d5c556392",
+      "s": "0x4ad8466b353d5c852a9ca4ce4a3cbaad48fbdf6dbb8aa2305d0468be7a192d10",
+      "v": 309,
+      "creates": "0x583985Ff6695310D03f414772761C9b35F36A6A8",
+      "chainId": 137
+    }
+  },
+  "proxies": [
+    {
+      "address": "0x8cfb5952B8bCa1f8dB8FD0a9916d994561cA7316",
+      "txHash": "0x8cbd4d37efd9d05a1e2f4f5816e5eeca1887b3a4055bf4026c98ddf9ba0795ad",
+      "kind": "uups"
+    },
+    {
+      "address": "0xcd178241c8e84617DFc0CAE6C7b963ADE3a1d35e",
+      "txHash": "0x4ed3a961d9c26a99f1f81a599db9ea979cd4a8a6069bbf47d4fbc9f59500f367",
+      "kind": "uups"
+    },
+    {
+      "address": "0xf829C09211c8881d1175bF480b17E288A58b9FB1",
+      "txHash": "0x125479a1973e9f5a5ee7320f5721f08a0740bd4557f7b57b72ee4b29a5879a1d",
+      "kind": "uups"
+    },
+    {
+      "address": "0x09CcF9560959e59795EBb502f3C02D4c59fc1a21",
+      "txHash": "0x4d5f3535b1296c3852eb893e076f5d729f827270fd0ab87ec31ab1894ad016ee",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xcaA9f481aC3D3821D20E426EE7234baA47755829",
+      "txHash": "0xbbcf92e634d85dd89f775f091418a4c804c1cf295bb952fd5b3d0e8df61b27d2",
+      "kind": "uups"
+    },
+    {
+      "address": "0x9F6f5b0f6d0Dc50F0d587d709a9E9B53bba8d9Ca",
+      "txHash": "0xc4bd42075d1047677cda2bca17d36c9e988dc0aa5ade58178b127bcc6090316a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8fa305fCCdaeBb02933D654903B40964C2e43e19",
+      "txHash": "0xf64aa7de1034d2b77323594c2dc4d3a3fae1238c3f31c43550caac490c4bab88",
+      "kind": "uups"
+    },
+    {
+      "address": "0xE415108A9d17D64454231511F939c9fcBDbF987c",
+      "txHash": "0x9394f6f5bdbd65cbb562cfe0909e3024c5b45e323f5e8bd3717abdbfe2f7fb03",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x279642d8590a0cDc231d1c143EB3a82ab9bd1751",
+      "txHash": "0x853eafaf0148bd1605adcf381823d2be9df0a0e40f497a4819df2656b4ce0b70",
+      "kind": "uups"
+    },
+    {
+      "address": "0xF1Badd63E99F13Fac3eb292c7aC7C64eE22ee0f6",
+      "txHash": "0xe7453f98ca9ecf4b99a0e6dfa85a5ce79b76e767f82de442deebe6c77c1060b9",
+      "kind": "uups"
+    },
+    {
+      "address": "0xA79e339786E6aaa776514bd035E55BE1A8c5129C",
+      "txHash": "0xe7efea950c08788dce2352236b02bd79ae5a0874f8d0a25d5b18cd3f826d9f11",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0F15f4A09B0D928f35C54aD8fb86f32a8892828d",
+      "txHash": "0xb4c8e0710b6062f98a470a29f4128559ee8efe4e1fec2d878f9ce4437ff074d1",
+      "kind": "uups"
+    },
+    {
+      "address": "0x8473bFFDF665191F9d7CC788f4D1D7e79e8d702C",
+      "txHash": "0x62175d4be7fbf5f35365943f86b50a57c71c16695e28cc13960ba8f3a7792676",
+      "kind": "uups"
+    },
+    {
+      "address": "0x6844254774a229EB549C3ae7957eB7247D982544",
+      "txHash": "0x5869eb2500184e57848727f27e98fad5662c1d4cd359e1c8417b1edc8fb65acc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x0Cd86dd0C50AC3B326DE5bbc980613448CA81016",
+      "txHash": "0x131847e192446632244ad434d9b3daa16d7dcec7deceac419e1183b32a8bc480",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x198393687ca45Af391773aD2Dc9065Ed43a9A606",
+      "txHash": "0x8c5da3b48b62326c7eab80927d7da4f3fa100013cc5c1631b93be44e99f3b3df",
+      "kind": "uups"
+    },
+    {
+      "address": "0x12363124714f27a4225749A8d20F04399D877566",
+      "txHash": "0x529d47c818e65108c9b399c847a16eeae0f9f2269fa716deb47fd3d74dd7b596",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9a69f541C59d3F85E84353D1655DB9e9ddfbcc34",
+      "txHash": "0x9f5837b38919ca7b3a12f6cdc9e829a334a7f7781a0bf0460fbee4bcb6898593",
+      "kind": "uups"
+    },
+    {
+      "address": "0xF1f43388a92808A07260F597279deD7c12a76e2b",
+      "txHash": "0xfea0aa1301ce5953ea29133af89fc38306efd031e2ed296d21cb768d0f086059",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "f86b2c84cea9aef2d75735db5f53d2d379558c2cc1f1b30fa917cfca5d35cac4": {
+      "address": "0xEA4877486490AAB3180ab18dea7D0CECb4b2c7bB",
+      "txHash": "0x831d4c4ab53102e3990c95b96b3ede407574778e9ed7c4f0631c8da9e9970eb7",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressArray",
+            "type": "t_mapping(t_bytes32,t_array(t_address)dyn_storage)",
+            "src": "contracts/Factory.sol:12"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressMap",
+            "type": "t_mapping(t_bytes32,t_mapping(t_bytes32,t_address))",
+            "src": "contracts/Factory.sol:13"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameEnded",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:14"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:15"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionType",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "contracts/Factory.sol:16"
+          },
+          {
+            "contract": "Factory",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:31"
+          },
+          {
+            "contract": "Factory",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:32"
+          }
+        ],
+        "types": {
+          "t_mapping(t_bytes32,t_array(t_address)dyn_storage)": {
+            "label": "mapping(bytes32 => address[])"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_bytes32,t_mapping(t_bytes32,t_address))": {
+            "label": "mapping(bytes32 => mapping(bytes32 => address))"
+          },
+          "t_mapping(t_bytes32,t_address)": {
+            "label": "mapping(bytes32 => address)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "b628acc1fea03711cf25f1fb4e0654aa3c38519cdd0d5f5bc8ede5fceaef0276": {
+      "address": "0x889FA0404ac2F9EF56321dcd963292a518336ad1",
+      "txHash": "0x8fb8f6725face1cda69c0322565b8743e8b562e4ed1c7cbc27f331e2f07a4748",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:27"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:95"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "MetaInitializable",
+            "label": "inited",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/MetaInitializable.sol:8"
+          },
+          {
+            "contract": "EIP712Base",
+            "label": "domainSeperator",
+            "type": "t_bytes32",
+            "src": "contracts/libraries/NativeMetaTransaction/EIP712Base.sol:19"
+          },
+          {
+            "contract": "NativeMetaTransaction",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol:13"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "question",
+            "type": "t_struct(Question)2148_storage",
+            "src": "contracts/GameQuestion.sol:46"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "ledger",
+            "type": "t_mapping(t_address,t_struct(BetInfo)2156_storage)",
+            "src": "contracts/GameQuestion.sol:47"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:48"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:49"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "questionID",
+            "type": "t_bytes32",
+            "src": "contracts/GameQuestion.sol:50"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:51"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "minBetAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:52"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "rewardRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:54"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:55"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "gameToken",
+            "type": "t_contract(IERC20Upgradeable)780",
+            "src": "contracts/GameQuestion.sol:56"
+          }
+        ],
+        "types": {
+          "t_struct(Question)2148_storage": {
+            "label": "struct GameQuestion.Question",
+            "members": [
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountA",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountB",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardBaseCalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "answer",
+                "type": "t_enum(Position)2128"
+              },
+              {
+                "label": "isGameEnded",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_enum(Position)2128": {
+            "label": "enum GameQuestion.Position",
+            "members": ["A", "B", "C"]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(BetInfo)2156_storage)": {
+            "label": "mapping(address => struct GameQuestion.BetInfo)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(BetInfo)2156_storage": {
+            "label": "struct GameQuestion.BetInfo",
+            "members": [
+              {
+                "label": "position",
+                "type": "t_enum(Position)2128"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_contract(IERC20Upgradeable)780": {
+            "label": "contract IERC20Upgradeable"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "5eea9b64d81b2efe6c417c79729db91448b8a56354bb3b1a1e37ee2480468da7": {
+      "address": "0x2C8E2125DeEc2545E37D8F9F2D11E0023F4D8671",
+      "txHash": "0xa165dc5aa9426232174fe5e17845abf731b4d9cfaee8ff833c6a64eac9cd39f2",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:27"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:95"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "MetaInitializable",
+            "label": "inited",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/MetaInitializable.sol:8"
+          },
+          {
+            "contract": "EIP712Base",
+            "label": "domainSeperator",
+            "type": "t_bytes32",
+            "src": "contracts/libraries/NativeMetaTransaction/EIP712Base.sol:19"
+          },
+          {
+            "contract": "NativeMetaTransaction",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol:13"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "question",
+            "type": "t_struct(Question)2148_storage",
+            "src": "contracts/GameQuestion.sol:46"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "ledger",
+            "type": "t_mapping(t_address,t_struct(BetInfo)2156_storage)",
+            "src": "contracts/GameQuestion.sol:47"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:48"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:49"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "questionID",
+            "type": "t_bytes32",
+            "src": "contracts/GameQuestion.sol:50"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:51"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "minBetAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:52"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "rewardRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:54"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:55"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "gameToken",
+            "type": "t_contract(IERC20Upgradeable)780",
+            "src": "contracts/GameQuestion.sol:56"
+          }
+        ],
+        "types": {
+          "t_struct(Question)2148_storage": {
+            "label": "struct GameQuestion.Question",
+            "members": [
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountA",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountB",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardBaseCalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "answer",
+                "type": "t_enum(Position)2128"
+              },
+              {
+                "label": "isGameEnded",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_enum(Position)2128": {
+            "label": "enum GameQuestion.Position",
+            "members": ["A", "B", "C"]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(BetInfo)2156_storage)": {
+            "label": "mapping(address => struct GameQuestion.BetInfo)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(BetInfo)2156_storage": {
+            "label": "struct GameQuestion.BetInfo",
+            "members": [
+              {
+                "label": "position",
+                "type": "t_enum(Position)2128"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_contract(IERC20Upgradeable)780": {
+            "label": "contract IERC20Upgradeable"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "9acec66ce98c1a696e2b35f59eee650170ed99a11fd981f7d3c3f7f455e1cc0c": {
+      "address": "0x5F681a35E1E78FdB8ed5ADcb7614FB3401B4389D",
+      "txHash": "0xdeeb24170806c64a0dd6daa59902e0e2615241d14c45ee5cb6977aed4a17dc36",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressArray",
+            "type": "t_mapping(t_bytes32,t_array(t_address)dyn_storage)",
+            "src": "contracts/Factory.sol:12"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressMap",
+            "type": "t_mapping(t_bytes32,t_mapping(t_bytes32,t_address))",
+            "src": "contracts/Factory.sol:13"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameEnded",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:14"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:15"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameTreasuryClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:16"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionType",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "contracts/Factory.sol:17"
+          },
+          {
+            "contract": "Factory",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:32"
+          },
+          {
+            "contract": "Factory",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:33"
+          }
+        ],
+        "types": {
+          "t_mapping(t_bytes32,t_array(t_address)dyn_storage)": {
+            "label": "mapping(bytes32 => address[])"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_bytes32,t_mapping(t_bytes32,t_address))": {
+            "label": "mapping(bytes32 => mapping(bytes32 => address))"
+          },
+          "t_mapping(t_bytes32,t_address)": {
+            "label": "mapping(bytes32 => address)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "85e1755d0fdf2066e88a0bb406e2ec001f88e8187b4a8f1c9591f519e84321aa": {
+      "address": "0xE11661628E38bAd798a29Ee0fF2De9f698fe1b48",
+      "txHash": "0x76e49f6af3dc2ee3c65cc2e68be45de0b48cefc0038a3ced70dffc80e7dc6955",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:27"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:95"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "MetaInitializable",
+            "label": "inited",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/MetaInitializable.sol:8"
+          },
+          {
+            "contract": "EIP712Base",
+            "label": "domainSeperator",
+            "type": "t_bytes32",
+            "src": "contracts/libraries/NativeMetaTransaction/EIP712Base.sol:19"
+          },
+          {
+            "contract": "NativeMetaTransaction",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol:13"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "question",
+            "type": "t_struct(Question)2204_storage",
+            "src": "contracts/GameQuestion.sol:46"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "ledger",
+            "type": "t_mapping(t_address,t_struct(BetInfo)2212_storage)",
+            "src": "contracts/GameQuestion.sol:47"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:48"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:49"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "questionID",
+            "type": "t_bytes32",
+            "src": "contracts/GameQuestion.sol:50"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:51"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "minBetAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:52"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "rewardRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:54"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:55"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "gameToken",
+            "type": "t_contract(IERC20Upgradeable)780",
+            "src": "contracts/GameQuestion.sol:56"
+          }
+        ],
+        "types": {
+          "t_struct(Question)2204_storage": {
+            "label": "struct GameQuestion.Question",
+            "members": [
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountA",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountB",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardBaseCalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "answer",
+                "type": "t_enum(Position)2184"
+              },
+              {
+                "label": "isGameEnded",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_enum(Position)2184": {
+            "label": "enum GameQuestion.Position",
+            "members": ["A", "B", "C"]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(BetInfo)2212_storage)": {
+            "label": "mapping(address => struct GameQuestion.BetInfo)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(BetInfo)2212_storage": {
+            "label": "struct GameQuestion.BetInfo",
+            "members": [
+              {
+                "label": "position",
+                "type": "t_enum(Position)2184"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_contract(IERC20Upgradeable)780": {
+            "label": "contract IERC20Upgradeable"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "d40fe1d7cf13a8e1d7c51246a654699c30924d472ff74610cefaa0ac3d7b3d4a": {
+      "address": "0xc982d6C2878D9091C098e9199Eb79B62f22D410a",
+      "txHash": "0x90d4a2c52ee4ed729278fc3bbcb4f79e7258399b36672b0ceccb7cc70cd9dc7e",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "MetaInitializable",
+            "label": "inited",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/MetaInitializable.sol:8"
+          },
+          {
+            "contract": "EIP712Base",
+            "label": "domainSeperator",
+            "type": "t_bytes32",
+            "src": "contracts/libraries/NativeMetaTransaction/EIP712Base.sol:19"
+          },
+          {
+            "contract": "NativeMetaTransaction",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol:13"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressArray",
+            "type": "t_mapping(t_bytes32,t_array(t_address)dyn_storage)",
+            "src": "contracts/Factory.sol:11"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressMap",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "contracts/Factory.sol:12"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:13"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameTreasuryClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:14"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionType",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "contracts/Factory.sol:15"
+          },
+          {
+            "contract": "Factory",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:30"
+          },
+          {
+            "contract": "Factory",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:31"
+          }
+        ],
+        "types": {
+          "t_mapping(t_bytes32,t_array(t_address)dyn_storage)": {
+            "label": "mapping(bytes32 => address[])"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_bytes32,t_address)": {
+            "label": "mapping(bytes32 => address)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "4e99d349df73e11b229e56baadc65d3d0c987b9f639da03424c94429c66f14cc": {
+      "address": "0xf96A81D7A9d8a1f70916550FB7D118A334954221",
+      "txHash": "0x34fbf05eea2be7626227e93367d13fda0cdedd9b0eefe1b348e27670d018d393",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradeable.sol:76"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:27"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:95"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "MetaInitializable",
+            "label": "inited",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/MetaInitializable.sol:8"
+          },
+          {
+            "contract": "EIP712Base",
+            "label": "domainSeperator",
+            "type": "t_bytes32",
+            "src": "contracts/libraries/NativeMetaTransaction/EIP712Base.sol:19"
+          },
+          {
+            "contract": "NativeMetaTransaction",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol:13"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "question",
+            "type": "t_struct(Question)2421_storage",
+            "src": "contracts/GameQuestion.sol:46"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "ledger",
+            "type": "t_mapping(t_address,t_struct(BetInfo)2429_storage)",
+            "src": "contracts/GameQuestion.sol:47"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:48"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:49"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "questionID",
+            "type": "t_bytes32",
+            "src": "contracts/GameQuestion.sol:50"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:51"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "minBetAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:52"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "rewardRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:54"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:55"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "gameToken",
+            "type": "t_contract(IERC20Upgradeable)780",
+            "src": "contracts/GameQuestion.sol:56"
+          }
+        ],
+        "types": {
+          "t_struct(Question)2421_storage": {
+            "label": "struct GameQuestion.Question",
+            "members": [
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountA",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountB",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardBaseCalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "answer",
+                "type": "t_enum(Position)2401"
+              },
+              {
+                "label": "isGameEnded",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_enum(Position)2401": {
+            "label": "enum GameQuestion.Position",
+            "members": ["A", "B", "C"]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(BetInfo)2429_storage)": {
+            "label": "mapping(address => struct GameQuestion.BetInfo)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(BetInfo)2429_storage": {
+            "label": "struct GameQuestion.BetInfo",
+            "members": [
+              {
+                "label": "position",
+                "type": "t_enum(Position)2401"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_contract(IERC20Upgradeable)780": {
+            "label": "contract IERC20Upgradeable"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "d543143cf064736266e309cfa63350aa48e72ca6a1f328571a2d4440b631d6fb": {
+      "address": "0xfD96ddc029eCF5DFe5a072F7933501f61c3Fb01C",
+      "txHash": "0x1617639e16c11cef8ea401dea100f5b3fe7596a1d132f23481850b8bb1fa086a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradable.sol:76"
+          },
+          {
+            "contract": "MetaInitializable",
+            "label": "inited",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/MetaInitializable.sol:8"
+          },
+          {
+            "contract": "EIP712Base",
+            "label": "domainSeperator",
+            "type": "t_bytes32",
+            "src": "contracts/libraries/NativeMetaTransaction/EIP712Base.sol:19"
+          },
+          {
+            "contract": "NativeMetaTransaction",
+            "label": "nonces",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "contracts/libraries/NativeMetaTransaction/NativeMetaTransaction.sol:13"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressArray",
+            "type": "t_mapping(t_bytes32,t_array(t_address)dyn_storage)",
+            "src": "contracts/Factory.sol:11"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionAddressMap",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "contracts/Factory.sol:12"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:13"
+          },
+          {
+            "contract": "Factory",
+            "label": "isGameTreasuryClaimed",
+            "type": "t_mapping(t_bytes32,t_bool)",
+            "src": "contracts/Factory.sol:14"
+          },
+          {
+            "contract": "Factory",
+            "label": "questionType",
+            "type": "t_mapping(t_bytes32,t_address)",
+            "src": "contracts/Factory.sol:15"
+          },
+          {
+            "contract": "Factory",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:22"
+          },
+          {
+            "contract": "Factory",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/Factory.sol:23"
+          }
+        ],
+        "types": {
+          "t_mapping(t_bytes32,t_array(t_address)dyn_storage)": {
+            "label": "mapping(bytes32 => address[])"
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_bytes32,t_address)": {
+            "label": "mapping(bytes32 => address)"
+          },
+          "t_mapping(t_bytes32,t_bool)": {
+            "label": "mapping(bytes32 => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "a149f5bb3a3a4c9bf650c6abe348d45942b7cd4f5d2cb79ddb5ca91555a3fe3e": {
+      "address": "0x95709Fa8DC2978cfC3b117e96219E8D77a802A0B",
+      "txHash": "0x866a51429b589f384e76d019c783540fc0eefe431a52c9d47b57be5fd2af0731",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:21"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:26"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:214"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:80"
+          },
+          {
+            "contract": "OwnableUpgradable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradable.sol:20"
+          },
+          {
+            "contract": "OwnableUpgradable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/OwnableUpgradable.sol:76"
+          },
+          {
+            "contract": "PausableUpgradable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:27"
+          },
+          {
+            "contract": "PausableUpgradable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "contracts/libraries/NativeMetaTransaction/PausableUpgradable.sol:95"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "_status",
+            "type": "t_uint256",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:37"
+          },
+          {
+            "contract": "ReentrancyGuardUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol:67"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "question",
+            "type": "t_struct(Question)2361_storage",
+            "src": "contracts/GameQuestion.sol:44"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "ledger",
+            "type": "t_mapping(t_address,t_struct(BetInfo)2369_storage)",
+            "src": "contracts/GameQuestion.sol:45"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "adminAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:46"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "operatorAddress",
+            "type": "t_address",
+            "src": "contracts/GameQuestion.sol:47"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "questionID",
+            "type": "t_bytes32",
+            "src": "contracts/GameQuestion.sol:48"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:49"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "minBetAmount",
+            "type": "t_uint256",
+            "src": "contracts/GameQuestion.sol:50"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "rewardRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:52"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "treasuryRate",
+            "type": "t_uint8",
+            "src": "contracts/GameQuestion.sol:53"
+          },
+          {
+            "contract": "GameQuestion",
+            "label": "gameToken",
+            "type": "t_contract(IERC20Upgradeable)780",
+            "src": "contracts/GameQuestion.sol:54"
+          }
+        ],
+        "types": {
+          "t_struct(Question)2361_storage": {
+            "label": "struct GameQuestion.Question",
+            "members": [
+              {
+                "label": "startTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "lockTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "totalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountA",
+                "type": "t_uint256"
+              },
+              {
+                "label": "betAmountB",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "rewardBaseCalAmount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "answer",
+                "type": "t_enum(Position)2341"
+              },
+              {
+                "label": "isGameEnded",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_enum(Position)2341": {
+            "label": "enum GameQuestion.Position",
+            "members": ["A", "B", "C"]
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_address,t_struct(BetInfo)2369_storage)": {
+            "label": "mapping(address => struct GameQuestion.BetInfo)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_struct(BetInfo)2369_storage": {
+            "label": "struct GameQuestion.BetInfo",
+            "members": [
+              {
+                "label": "position",
+                "type": "t_enum(Position)2341"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256"
+              },
+              {
+                "label": "claimed",
+                "type": "t_bool"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_contract(IERC20Upgradeable)780": {
+            "label": "contract IERC20Upgradeable"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    }
+  }
+}
