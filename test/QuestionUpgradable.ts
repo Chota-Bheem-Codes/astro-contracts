@@ -2,7 +2,7 @@ import { expect, use } from "chai";
 import { upgrades, ethers } from "hardhat";
 import { Contract, Signer } from "ethers";
 import { deployContract, MockProvider, solidity } from "ethereum-waffle";
-import DfynToken from "../artifacts/contracts/DfynTest.sol/DfynToken.json";
+import AstroToken from "../artifacts/contracts/AstroTest.sol/AstroToken.json";
 import GameQuestion from "../artifacts/contracts/GameQuestion.sol/GameQuestion.json";
 
 use(solidity);
@@ -25,21 +25,21 @@ describe("Upgradable question ", () => {
     user2 = signers[5];
   });
 
-  let dfynTokenContract;
-  let dfynToken: Contract;
+  let astroTokenContract;
+  let astroToken: Contract;
   let gameQuestionContract;
   let gameQuestion: Contract;
 
   const encodedGameId = ethers.utils.keccak256(ethers.utils.toUtf8Bytes("G1Q1"));
   //console.log(encodedGameId)
   beforeEach(async () => {
-    //dfynToken = await deployContract(user, DfynToken, [3000]);
-    dfynTokenContract = await ethers.getContractFactory("DfynToken");
-    dfynToken = await dfynTokenContract.connect(user).deploy(3000);
+    //astroToken = await deployContract(user, DfynToken, [3000]);
+    astroTokenContract = await ethers.getContractFactory("AstroToken");
+    astroToken = await astroTokenContract.connect(user).deploy(3000);
     //   gameQuestion = await deployContract(owner, GameQuestion, [
     //     admin.address,
     //     operator.address,
-    //     dfynToken.address,
+    //     astroToken.address,
     //     encodedGameId,
     //     3,
     //     1632049420,
@@ -50,23 +50,23 @@ describe("Upgradable question ", () => {
 
     const params = ethers.utils.defaultAbiCoder.encode(
       ["uint256", "uint256", "uint256", "uint8", "uint8", "address", "bytes32"],
-      [3, 1633080841, 1634014043, 90, 10, dfynToken.address, encodedGameId],
+      [3, 1633080841, 1634014043, 90, 10, astroToken.address, encodedGameId],
     );
     gameQuestion = await upgrades.deployProxy(gameQuestionContract, [params, admin.address, operator.address], {
       kind: "uups",
     });
     await gameQuestion.deployed();
 
-    await dfynToken.transfer(user1.address, 1000, { from: user.address });
-    await dfynToken.transfer(user2.address, 1000, { from: user.address });
+    await astroToken.transfer(user1.address, 1000, { from: user.address });
+    await astroToken.transfer(user2.address, 1000, { from: user.address });
 
-    await dfynToken.approve(gameQuestion.address, 1000, { from: user.address });
-    await dfynToken.connect(user1).approve(gameQuestion.address, 1000);
-    await dfynToken.connect(user2).approve(gameQuestion.address, 1000);
+    await astroToken.approve(gameQuestion.address, 1000, { from: user.address });
+    await astroToken.connect(user1).approve(gameQuestion.address, 1000);
+    await astroToken.connect(user2).approve(gameQuestion.address, 1000);
   });
 
   // it("Assigns initial balance", async () => {
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(1000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(1000);
   // });
 
   // it("Able to place bet", async () => {
@@ -78,14 +78,14 @@ describe("Upgradable question ", () => {
   //   await gameQuestion.connect(user).placeBet(10, 0);
   //   await gameQuestion.connect(owner).executeQuestion(0);
   //   await gameQuestion.connect(user).claim(user.address);
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(1000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(1000);
   // });
 
   // it("Able to claim full amount if game is cancelled", async () => {
   //   await gameQuestion.connect(user).placeBet(10, 0);
   //   await gameQuestion.connect(owner).executeQuestion(2);
   //   await gameQuestion.connect(user).claim(user.address);
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(1000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(1000);
   // });
 
   // it("should NOT be able to claim if lost", async () => {
@@ -117,7 +117,7 @@ describe("Upgradable question ", () => {
   //   await gameQuestion.connect(user).placeBet(10, 0);
   //   await gameQuestion.connect(owner).executeQuestion(0);
   //   await gameQuestion.connect(user).claim(user.address);
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(1000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(1000);
   // });
 
   // it("Bet option A 2x multiuser", async () => {
@@ -126,7 +126,7 @@ describe("Upgradable question ", () => {
   //   await gameQuestion.connect(user2).placeBet(10, 1);
   //   await gameQuestion.connect(owner).executeQuestion(0);
   //   await gameQuestion.connect(user).claim(user.address);
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(1017);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(1017);
   // });
 
   // it("Not able to claim twice", async () => {
@@ -145,7 +145,7 @@ describe("Upgradable question ", () => {
   //   await gameQuestion.connect(owner).executeQuestion(0);
   //   await gameQuestion.connect(user).claim(user.address);
   //   await gameQuestion.connect(owner).claimTreasury();
-  //   expect(await dfynToken.balanceOf(admin.address)).to.equal(3);
+  //   expect(await astroToken.balanceOf(admin.address)).to.equal(3);
   // });
 
   // it("NOT Able to claim treasury if game has not ended", async () => {

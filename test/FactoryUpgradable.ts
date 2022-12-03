@@ -2,7 +2,7 @@ import { expect, use } from "chai";
 import { upgrades, ethers } from "hardhat";
 import { Contract, Signer } from "ethers";
 import { deployContract, MockProvider, solidity } from "ethereum-waffle";
-import DfynToken from "../artifacts/contracts/DfynTest.sol/DfynToken.json";
+import AstroToken from "../artifacts/contracts/AstroTest.sol/AstroToken.json";
 import GameQuestion from "../artifacts/contracts/GameQuestion.sol/GameQuestion.json";
 
 use(solidity);
@@ -27,8 +27,8 @@ describe("Factory Upgradable", () => {
     user2 = signers[5];
   });
 
-  let dfynTokenContract;
-  let dfynToken;
+  let astroTokenContract;
+  let astroToken;
   let questionFactoryContract;
   let questionFactory;
   let gameQuestionContract;
@@ -46,10 +46,10 @@ describe("Factory Upgradable", () => {
   let questionData2;
 
   beforeEach(async () => {
-    dfynTokenContract = await ethers.getContractFactory("DfynToken");
-    dfynToken = await dfynTokenContract.connect(user).deploy(4000);
-    await dfynToken.transfer(user1.address, 1000, { from: user.address });
-    await dfynToken.transfer(user2.address, 1000, { from: user.address });
+    astroTokenContract = await ethers.getContractFactory("AstroToken");
+    astroToken = await astroTokenContract.connect(user).deploy(4000);
+    await astroToken.transfer(user1.address, 1000, { from: user.address });
+    await astroToken.transfer(user2.address, 1000, { from: user.address });
 
     questionFactoryContract = await ethers.getContractFactory("Factory");
     questionFactory = await upgrades.deployProxy(questionFactoryContract, [admin.address, operator.address], {
@@ -60,7 +60,7 @@ describe("Factory Upgradable", () => {
 
     const params = ethers.utils.defaultAbiCoder.encode(
       ["uint256", "uint256", "uint256", "uint8", "uint8", "address", "bytes32"],
-      [3, 1632049420, 1635600093, 90, 10, dfynToken.address, encodedID("G1Q1")],
+      [3, 1632049420, 1635600093, 90, 10, astroToken.address, encodedID("G1Q1")],
     );
 
     gameQuestionProxy = await upgrades.deployProxy(gameQuestionContract, [params, admin.address, operator.address]);
@@ -72,12 +72,12 @@ describe("Factory Upgradable", () => {
 
     data1 = ethers.utils.defaultAbiCoder.encode(
       ["uint256", "uint256", "uint256", "uint8", "uint8", "address", "bytes32"],
-      [3, 1632049420, 1635600093, 90, 10, dfynToken.address, encodedID("G1Q1")],
+      [3, 1632049420, 1635600093, 90, 10, astroToken.address, encodedID("G1Q1")],
     );
 
     data2 = ethers.utils.defaultAbiCoder.encode(
       ["uint256", "uint256", "uint256", "uint8", "uint8", "address", "bytes32"],
-      [3, 1632049420, 1635600093, 90, 10, dfynToken.address, encodedID("G1Q2")],
+      [3, 1632049420, 1635600093, 90, 10, astroToken.address, encodedID("G1Q2")],
     );
 
     questionData = [
@@ -123,7 +123,7 @@ describe("Factory Upgradable", () => {
   //   await questionFactory.connect(operator).deployQuestions(encodedID("I1"), questionData);
   //   const data = ethers.utils.defaultAbiCoder.encode(["uint256", "uint8"], [10, 0]);
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data);
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
   //   expect((await gameQuestion.seeUserInfo(user.address)).amount.toString()).to.equal("10");
@@ -133,7 +133,7 @@ describe("Factory Upgradable", () => {
   //   const data = ethers.utils.defaultAbiCoder.encode(["uint256", "uint8"], [10, 0]);
   //   await questionFactory.connect(operator).deployQuestions(encodedID("I1"), questionData);
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data);
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
   //   await gameQuestion.connect(operator).executeQuestion(0);
@@ -145,28 +145,28 @@ describe("Factory Upgradable", () => {
   //   const data = ethers.utils.defaultAbiCoder.encode(["uint256", "uint8"], [10, 0]);
   //   await questionFactory.connect(operator).deployQuestions(encodedID("I1"), questionData);
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data);
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
   //   await gameQuestion.connect(operator).executeQuestion(2);
   //   await questionFactory.connect(user).claimBet(encodedID("G1Q1"));
   //   //   expect((await gameQuestion.seeUserInfo(user.address)).claimed).to.equal(true)
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(2000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(2000);
   // });
 
   // it("Able to claim full amount if no bets on other side", async () => {
   //   const data = ethers.utils.defaultAbiCoder.encode(["uint256", "uint8"], [10, 0]);
   //   await questionFactory.connect(operator).deployQuestions(encodedID("I1"), questionData);
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data);
-  //   await dfynToken.connect(user1).approve(questionAddress, 100);
+  //   await astroToken.connect(user1).approve(questionAddress, 100);
   //   await questionFactory.connect(user1).placeTheBet(encodedID("G1Q1"), data);
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
   //   await gameQuestion.connect(operator).executeQuestion(0);
   //   await questionFactory.connect(user).claimBet(encodedID("G1Q1"));
   //   //   expect((await gameQuestion.seeUserInfo(user.address)).claimed).to.equal(true)
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(2000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(2000);
   // });
 
   // it("Treasy gets full amount 0 bet side wins", async () => {
@@ -175,10 +175,10 @@ describe("Factory Upgradable", () => {
 
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
 
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data);
 
-  //   await dfynToken.connect(user1).approve(questionAddress, 100);
+  //   await astroToken.connect(user1).approve(questionAddress, 100);
   //   await questionFactory.connect(user1).placeTheBet(encodedID("G1Q1"), data);
 
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
@@ -186,7 +186,7 @@ describe("Factory Upgradable", () => {
 
   //   await gameQuestion.connect(admin).claimTreasury();
   //   //   expect((await gameQuestion.seeUserInfo(user.address)).claimed).to.equal(true)
-  //   expect(await dfynToken.balanceOf(admin.address)).to.equal(20);
+  //   expect(await astroToken.balanceOf(admin.address)).to.equal(20);
   // });
 
   // it("should NOT be able to claim if lost", async () => {
@@ -194,7 +194,7 @@ describe("Factory Upgradable", () => {
   //   await questionFactory.connect(operator).deployQuestions(encodedID("I1"), questionData);
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
 
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data);
 
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
@@ -206,7 +206,7 @@ describe("Factory Upgradable", () => {
   // it("should NOT be able to bet if betting timed out", async () => {
   //   data1 = ethers.utils.defaultAbiCoder.encode(
   //     ["uint256", "uint256", "uint256", "uint8", "uint8", "address", "bytes32"],
-  //     [3, 163204920, 163560003, 90, 10, dfynToken.address, encodedID("G1Q1")],
+  //     [3, 163204920, 163560003, 90, 10, astroToken.address, encodedID("G1Q1")],
   //   );
 
   //   questionData = [
@@ -220,7 +220,7 @@ describe("Factory Upgradable", () => {
   //   await questionFactory.connect(operator).deployQuestions(encodedID("I1"), questionData);
   //   const data = ethers.utils.defaultAbiCoder.encode(["uint256", "uint8"], [10, 0]);
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await expect(questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data)).to.be.revertedWith("Bet Failed");
   // });
 
@@ -230,7 +230,7 @@ describe("Factory Upgradable", () => {
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
   //   await gameQuestion.connect(operator).executeQuestion(1);
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await expect(questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data)).to.be.revertedWith("Bet Failed");
   // });
 
@@ -241,9 +241,9 @@ describe("Factory Upgradable", () => {
 
   //   const questionAddress = await questionFactory.questionAddressMap(encodedID("G1Q1"));
 
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
-  //   await dfynToken.connect(user1).approve(questionAddress, 100);
-  //   await dfynToken.connect(user2).approve(questionAddress, 100);
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.connect(user1).approve(questionAddress, 100);
+  //   await astroToken.connect(user2).approve(questionAddress, 100);
 
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data1);
   //   await questionFactory.connect(user1).placeTheBet(encodedID("G1Q1"), data2);
@@ -253,7 +253,7 @@ describe("Factory Upgradable", () => {
   //   await gameQuestion.connect(operator).executeQuestion(0);
 
   //   await questionFactory.connect(user).claimBet(encodedID("G1Q1"));
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(2017);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(2017);
   // });
 
   // it("Test Claim All", async () => {
@@ -262,10 +262,10 @@ describe("Factory Upgradable", () => {
   //   const questionAddresses = await questionFactory.connect(user).getGameQuestions(encodedID("G1"));
   //   console.log("questionAddresses", questionAddresses);
   //   for (let i = 0; i < questionAddresses.length; i++) {
-  //     await dfynToken.approve(questionAddresses[i], 100, { from: user.address });
+  //     await astroToken.approve(questionAddresses[i], 100, { from: user.address });
   //     await questionFactory.connect(user).placeTheBet(encodedID("G1Q" + (i + 1)), data);
 
-  //     await dfynToken.connect(user1).approve(questionAddresses[i], 100);
+  //     await astroToken.connect(user1).approve(questionAddresses[i], 100);
   //     await questionFactory.connect(user1).placeTheBet(encodedID("G1Q" + (i + 1)), data);
 
   //     const gameQuestion = await gameQuestionContract.attach(questionAddresses[i]);
@@ -273,8 +273,8 @@ describe("Factory Upgradable", () => {
   //   }
   //   await questionFactory.connect(user).claimGameBets(encodedID("G1"));
   //   await questionFactory.connect(user1).claimGameBets(encodedID("G1"));
-  //   expect(await dfynToken.balanceOf(user.address)).to.equal(2000);
-  //   expect(await dfynToken.balanceOf(user1.address)).to.equal(1000);
+  //   expect(await astroToken.balanceOf(user.address)).to.equal(2000);
+  //   expect(await astroToken.balanceOf(user1.address)).to.equal(1000);
   // });
 
   // it("1 user Not Able to claim all twice", async () => {
@@ -283,10 +283,10 @@ describe("Factory Upgradable", () => {
   //   const questionAddresses = await questionFactory.connect(user).getGameQuestions(encodedID("G1"));
   //   console.log("questionAddresses", questionAddresses);
   //   for (let i = 0; i < questionAddresses.length; i++) {
-  //     await dfynToken.approve(questionAddresses[i], 100, { from: user.address });
+  //     await astroToken.approve(questionAddresses[i], 100, { from: user.address });
   //     await questionFactory.connect(user).placeTheBet(encodedID("G1Q" + (i + 1)), data);
 
-  //     await dfynToken.connect(user1).approve(questionAddresses[i], 100);
+  //     await astroToken.connect(user1).approve(questionAddresses[i], 100);
   //     await questionFactory.connect(user1).placeTheBet(encodedID("G1Q" + (i + 1)), data);
 
   //     const gameQuestion = await gameQuestionContract.attach(questionAddresses[i]);
@@ -305,10 +305,10 @@ describe("Factory Upgradable", () => {
 
   //   const questionAddress = await questionFactory.connect(user).questionAddressMap(encodedID("G1Q1"));
 
-  //   await dfynToken.approve(questionAddress, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q1"), data1);
 
-  //   await dfynToken.connect(user1).approve(questionAddress, 100);
+  //   await astroToken.connect(user1).approve(questionAddress, 100);
   //   await questionFactory.connect(user1).placeTheBet(encodedID("G1Q1"), data2);
 
   //   const gameQuestion = await gameQuestionContract.attach(questionAddress);
@@ -316,10 +316,10 @@ describe("Factory Upgradable", () => {
 
   //   const questionAddress2 = await questionFactory.connect(user).questionAddressMap(encodedID("G1Q2"));
 
-  //   await dfynToken.approve(questionAddress2, 100, { from: user.address });
+  //   await astroToken.approve(questionAddress2, 100, { from: user.address });
   //   await questionFactory.connect(user).placeTheBet(encodedID("G1Q2"), data1);
 
-  //   await dfynToken.connect(user1).approve(questionAddress2, 100);
+  //   await astroToken.connect(user1).approve(questionAddress2, 100);
   //   await questionFactory.connect(user1).placeTheBet(encodedID("G1Q2"), data2);
 
   //   const gameQuestion2 = await gameQuestionContract.attach(questionAddress2);
@@ -327,6 +327,6 @@ describe("Factory Upgradable", () => {
 
   //   //await gameQuestion.connect(admin).claimTreasury()
   //   await questionFactory.connect(admin).claimGameTreasury(encodedID("G1"));
-  //   expect(await dfynToken.balanceOf(admin.address)).to.equal(4);
+  //   expect(await astroToken.balanceOf(admin.address)).to.equal(4);
   // });
 });
